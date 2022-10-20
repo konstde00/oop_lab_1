@@ -14,7 +14,7 @@ namespace Excel.service.impl
             cell.PointersToThis.AddRange(pointers);
         }
 
-        public bool CheckLoop(Cell cell, List<Cell> list)  //??
+        public bool CheckLoop(Cell cell, List<Cell> list) 
         {
             if (list.Any(c => c.Name == cell.Name))
             {
