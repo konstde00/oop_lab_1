@@ -175,7 +175,7 @@ namespace Excel.service.impl
 
             foreach (Match match in regex.Matches(expr))
             {
-                if (_dictionary.ContainsKey(match.Value)) //addReference
+                if (_dictionary.ContainsKey(match.Value))
                 {
                     var nums = ColumnNameConverter.From26System(match.Value);
                     table.Sheet[row][col].NewReferencesFromThis.Add(table.Sheet[nums.Item1][nums.Item2]);
@@ -382,7 +382,7 @@ namespace Excel.service.impl
                 {
                     var index = sr.ReadLine();
                     if (index == null)
-                        throw new NullReferenceException("No fucking clue what is it, rework will be needed"); // TODO: Take a look at this place
+                        throw new NullReferenceException("No fucking clue what is it, rework will be needed");
                     var expression = sr.ReadLine();
                     var value = sr.ReadLine();
 
