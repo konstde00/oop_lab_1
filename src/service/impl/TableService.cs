@@ -382,7 +382,7 @@ namespace Excel.service.impl
                 {
                     var index = sr.ReadLine();
                     if (index == null)
-                        throw new NullReferenceException("No fucking clue what is it, rework will be needed");
+                        throw new NullReferenceException("Wrong data provided");
                     var expression = sr.ReadLine();
                     var value = sr.ReadLine();
 
