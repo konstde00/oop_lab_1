@@ -6,7 +6,7 @@ using Excel.service;
 
 namespace Excel
 {
-    public partial class MyExcel : Form
+    public partial class MyExcel
     {
         private Table _table = new();
         private readonly ITableService _tableService;
