@@ -28,8 +28,6 @@ MULTIPLY : '*';
 DIVIDE : '/';
 SUBTRACT : '-';
 ADD : '+';
-INCREMENT: 'inc';
-DECREMENT: 'dec';
 LPAREN : '(';
 RPAREN : ')';
 
